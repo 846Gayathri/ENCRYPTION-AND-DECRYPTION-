@@ -1,0 +1,102 @@
+body {
+    background: url("/static/background6.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+.site-header {
+    width: 100%;
+    padding: 12px 0; /* Reduced further */
+    background: url('/static/header1.jpg') no-repeat center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.3em; /* Slightly smaller */
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(244, 243, 243, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Header Styling */
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+/* Label Styling */
+label {
+    font-size: 1em;
+    color: #374151;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* File Input Styling */
+input[type="file"] {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    cursor: pointer;
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Base Button Styling */
+.btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+/* Encrypt Button Styling */
+.encrypt {
+    background-color: #3b82f6;
+    color: white;
+}
+.encrypt:hover {
+    background-color: #2563eb;
+}
+
+/* Decrypt Button Styling */
+.decrypt {
+    background-color: #10b981;
+    color: white;
+}
+.decrypt:hover {
+    background-color: #059669;
+}

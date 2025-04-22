@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Encryptor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <h2>🛡️ SecureFile Pro</h2>
+    </header>
+    
+    <div class="container">
+        <h1>🔐 File Encryptor/Decryptor</h1>
+        <form method="post" enctype="multipart/form-data">
+            <label for="file">Choose a file:</label>
+            <input type="file" name="file" id="file" required>
+            <div class="button-group">
+                <button type="submit" name="action" value="encrypt" class="btn encrypt">Encrypt</button>
+                <button type="submit" name="action" value="decrypt" class="btn decrypt">Decrypt</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
